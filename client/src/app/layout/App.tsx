@@ -1,7 +1,7 @@
 import {  useState } from "react"
 import { Box, Container, createTheme, CssBaseline, ThemeProvider} from "@mui/material"
 import NavBar from "./NavBar"
-import { Outlet } from "react-router-dom"
+import { Outlet, ScrollRestoration } from "react-router-dom"
 import { useAppSelector } from "../store/store"
 
 
@@ -26,6 +26,7 @@ const {darkMode} = useAppSelector(state => state.ui)
 
   return (
     <ThemeProvider theme={theme}>
+      <ScrollRestoration />
     <CssBaseline/>
     <NavBar />
     <Box
