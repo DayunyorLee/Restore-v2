@@ -1,5 +1,5 @@
 /*import { useEffect, useState } from "react";*/
-import { Grid2, Pagination } from "@mui/material";
+import { Grid2 } from "@mui/material";
 import ProductList from "./ProductList";
 import { useFetchFiltersQuery, useFetchProductsQuery } from "./catalogApi";
 import Filters from "./Filters";

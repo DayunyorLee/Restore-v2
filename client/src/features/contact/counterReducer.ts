@@ -39,7 +39,7 @@ export function deccrementLegacy(amount = 1){
     }
 }
 
-export default function counterReducer(state = initialState, action: {type: string, payload: number}){
+export default function counterReducer(state = {data: 42}, action: {type: string, payload: number}){
     switch (action.type) {
         case 'increment':
             
