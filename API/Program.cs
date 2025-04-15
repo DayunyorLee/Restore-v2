@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container. (Service)
-
+//builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("Cloudinary"));
 builder.Services.AddControllers();
 builder.Services.AddDbContext<StoreContext>(opt =>{
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
