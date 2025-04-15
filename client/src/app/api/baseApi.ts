@@ -8,6 +8,7 @@ const customBaseQuery = fetchBaseQuery({
     credentials: 'include'
 });
 
+
 type ErrorResponse = | string | {title: string} | {errors: string[]};
 
 const sleep = () => new Promise(resolve => setTimeout(resolve, 1000));
