@@ -30,7 +30,7 @@ export default function HomePage() {
           textAlign='center'
           sx={{my: 3}}
           >
-            Welcome to Restore
+            Welcome to My Restore
           </Typography>
           <Button
           variant="contained"

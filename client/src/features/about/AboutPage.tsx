@@ -35,7 +35,7 @@ export default function AboutPage() {
       </ButtonGroup>
       {validationErrors.length > 0 && (
         <Alert severity="error">
-        <AlertTitle>Validation errors</AlertTitle>
+        <AlertTitle>Validation errors 12345</AlertTitle>
         <List>
           {validationErrors.map(err => ( 
             <ListItem key={err}>{err}</ListItem>
